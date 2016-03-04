@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+#import "Samurai_Image.h"
 @interface AppDelegate ()
 
 @end
@@ -18,6 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
     // Override point for customization after application launch.
+    
+    CGSize		shadowSize = CGSizeMake( [UIScreen mainScreen].bounds.size.width, 1.0f );
+    UIImage *	shadowImage = [UIImage imageWithColor:[UIColor orangeColor] size:shadowSize];
+    
+    [[UINavigationBar appearance] setShadowImage:shadowImage];
     return YES;
 }
 
