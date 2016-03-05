@@ -28,7 +28,17 @@
 //	THE SOFTWARE.
 //
 
-#define __SAMURAI_DEBUG__		(__OFF__)	/// 調試模式
-#define __SAMURAI_LOGGING__		(__OFF__)	/// 日誌模式
-#define __SAMURAI_TESTING__		(__OFF__)	/// 單元測試
-#define __SAMURAI_SERVICE__		(__OFF__)	/// 後臺服務
+//#import "STIHTTPNetwork.h"
+
+
+#import "NSObject+AutoCoding.h"
+#import "AFNetworking.h"
+
+
+static NSString * const PENGAPIBaseURLString = @"http://121.41.103.139:9080";
+@interface PENGClient : AFHTTPRequestOperationManager
++ (instancetype)sharedClient;
+@end
+
+@interface NSObject (APIExtension) <AutoModelCoding>
+@end

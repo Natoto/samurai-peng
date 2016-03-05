@@ -13,9 +13,9 @@
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         
-        <meta name="navbar-logo" content="url(pengicon.png)"/>
-        <meta name="navbar-text-color" content="#333"/>
-        <meta name="navbar-tint-color" content="#333"/>
+<!--        <meta name="navbar-logo" content="url(pengicon.png)"/>-->
+<!--        <meta name="navbar-text-color" content="#333"/>-->
+<!--        <meta name="navbar-tint-color" content="#333"/>-->
         <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
         <link rel="stylesheet" type="text/css" href="../css/main.css"/>
         
@@ -39,23 +39,24 @@
                 auto-correction
                 spell-checking>
                 
-                </div>
+                15920549038
             </UITextField>
+                </div>
             <div class="row-3">
                 <UIView>
-                <UITextField id="t1" class="password" tabindex="2" placeholder="请输入验证码"
+                <UITextField id="t2" class="password" tabindex="2" placeholder="请输入验证码"
                     keyboard-type="ascii"
                     return-key-type="next"
                     auto-capitalization
                     auto-correction
-                    spell-checking></UITextField>
+                    spell-checking>2015</UITextField>
                  <UIButton class="sendcodebtn" onclick="@selector(test1:)">发送验证码</UIButton>
                  </UIView>
             </div>
             
             <div class="row-4">
                 
-               <UIButton class="loginbtn" >登录
+               <UIButton class="loginbtn" onclick="@selector(submit:)" >登录
                </Button>
                    
              </div>
@@ -195,6 +196,14 @@
             border-color: #139092;
             border-width: 1px;
             border-style: solid;
+        }
+        
+        
+        .error {
+            border-radius: 5px;
+            border-color: red;
+            border-width: 3px;
+            color: red;
         }
         
         .label2 {
