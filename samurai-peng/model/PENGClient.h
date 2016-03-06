@@ -33,12 +33,27 @@
 
 #import "NSObject+AutoCoding.h"
 #import "AFNetworking.h"
+#import "Req.h"
+#import "NSObject+ObjectMap.h"
 
-
+#define PENG_DOMAIN         @"121.199.49.104:8080"
 static NSString * const PENGAPIBaseURLString = @"http://121.41.103.139:9080";
 @interface PENGClient : AFHTTPRequestOperationManager
 + (instancetype)sharedClient;
+ 
++(void)fetch_PengResourceService:(void (^)(NSString * response))response
+                    errorHandler:(void (^)(NSError * err))err;
 @end
 
-@interface NSObject (APIExtension) <AutoModelCoding>
+@class Req;
+@interface BaseModel:NSObject
+-(NSString *)deviceToken;
+-(NSString *)deviceOS;
+-(NSString *)chanel;
+-(NSString *)rid;
+-(NSString *)sessionId;
+-(NSNumber *)uid;
+-(void)setReq:(Req *)req;
 @end
+
+ 

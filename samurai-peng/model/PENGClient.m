@@ -28,13 +28,18 @@
 //	THE SOFTWARE.
 //
 
+#import "PengResource.h"
 #import "PENGClient.h"
 #import "NSDate+Extension.h"
+#import "GlobalData.h"
 
 //static NSString * const DribbbleAuthURLString = @"https://dribbble.com/oauth/";
 //static NSString * const DribbbleAuthorizationToken = @"5354c746b236110c767ef7e3c0cc6b76069fa27e5eb1df982636d90a3d057358";
 
 #pragma mark - API
+@interface PENGClient()
+
+@end
 
 @implementation PENGClient
 
@@ -56,69 +61,85 @@
     });
     return _sharedClient;
 }
-
-- (id)processedDataWithResponseObject:(id)responseObject task:(NSURLSessionDataTask *)task
+static AFHTTPRequestOperationManager * maneger;
++(void)fetch_PengResourceService:(void (^)(NSString * response))response
+                              errorHandler:(void (^)(NSError * err))err
 {
-    // Dump response headers
-//    NSHTTPURLResponse * resp = ( NSHTTPURLResponse *)task.response;
-//    NSLog(@"%@", resp.allHeaderFields);
+    PengResource * peng = [[PengResource alloc] init];
+    peng.chanel = @"pengpeng";
+    peng.versionName = [NSString stringWithFormat:@"%@",@"1.5.1"]; //@"1.02";
+    peng.versionCode = @"110";
+    peng.deviceSystem = @"ios";
+    NSDictionary * params = [peng objectDictionary];
     
-    if ( responseObject )
-    {
-        if ( [responseObject isKindOfClass:[NSDictionary class]] )
-        {
-            if ( !responseObject[@"message"] && !responseObject[@"error"] )
+    maneger = [AFHTTPRequestOperationManager manager];
+    maneger.securityPolicy = [AFSecurityPolicy defaultPolicy];
+
+    [maneger GET:@"http://121.199.49.104:8080/PengResourceService/PengDNSv2" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        
+        NSString *responestring = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+        NSLog(@"%@",responestring);
+        NSArray * array = [responestring componentsSeparatedByString:@";"];
+        if (array.count >= 3) {
+            NSString * hostname = array[0];
+            NSString * m_resource_hostname= array[1];
+            NSString * host = hostname;
+#warning 注意:先要有hostname才能初始化httpsengine
+            [GlobalData sharedInstance].m_hostname = host;
+            [GlobalData sharedInstance].m_resource_hostname = m_resource_hostname;
+            [GlobalData sharedInstance].m_picture_hostfolder = array[2];
+            if(array.count >= 4)
             {
-                return @{@"data": responseObject};
+                [GlobalData sharedInstance].m_videoUploadIpAndPort = array[3];
+                [GlobalData sharedInstance].m_videoAccessUrl = array[4];
             }
         }
-        
-        if ( [responseObject isKindOfClass:[NSArray class]] )
-        {
-            return @{@"data": responseObject};
-        }
-    }
-    
-    return responseObject;
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@",err);
+    }];
 }
 
 @end
+ 
+@implementation BaseModel
 
-#pragma mark -
-
-NSDate * CreateDateFromString(NSString * string)
+-(NSString *)deviceToken
 {
-    if ( !string )
-        return nil;
-    return [[NSDate format:@"yyyy-MM-dd'T'HH:mm:ss'Z'"] dateFromString:string];
+    return @"abcddfafdasf";
 }
 
-@implementation NSObject (APIExtension)
-
-+ (id)processedValueForKey:(NSString *)key
-               originValue:(id)originValue
-            convertedValue:(id)convertedValue
-                     class:(__unsafe_unretained Class)clazz
-                  subClass:(__unsafe_unretained Class)subClazz
+-(NSString *)deviceOS
 {
-    if ( [clazz isEqual:NSDate.class] )
-    {
-        if ( [originValue isKindOfClass:clazz] ) {
-            return originValue;
-        } else {
-            return CreateDateFromString(convertedValue);
-        }
-    }
-    
-    if ( [clazz isEqual:NSNumber.class] )
-    {
-        if (  [originValue isKindOfClass:NSString.class] )
-        {
-            return @([originValue floatValue]);
-        }
-    }
-    
-    return convertedValue;
+    return @"ios";
+}
+
+-(NSString *)chanel
+{
+    return @"appstore";
+}
+
+-(NSString *)rid
+{
+    return @"a9dp8000";
+}
+
+-(NSString *)sessionId
+{
+    return [GlobalData sharedInstance].m_loginResp.userInfo.sessionId;
+}
+
+-(NSNumber *)uid
+{
+    return [GlobalData sharedInstance].m_loginResp.userInfo.uid;
+}
+
+
+-(void)setReq:(Req *)req
+{
+    req.msgType = NSStringFromClass([req class]);
+    req.sessionId = [self sessionId];
+    req.uid = [self uid];
+    req.rid = [self rid];
 }
 
 @end

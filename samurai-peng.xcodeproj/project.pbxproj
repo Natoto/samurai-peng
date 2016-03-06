@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13165471BA0EA66DA18B126B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8B5F5647D93A57AEC420C1 /* libPods.a */; };
 		33A888C01C891EB600859342 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A888BF1C891EB600859342 /* main.m */; };
 		33A888C31C891EB600859342 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A888C21C891EB600859342 /* AppDelegate.m */; };
 		33A888C61C891EB600859342 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A888C51C891EB600859342 /* RootViewController.m */; };
@@ -672,6 +673,28 @@
 		33A890D11C89562500859342 /* Resp.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A88FA41C89562500859342 /* Resp.m */; };
 		33A890D41C89563800859342 /* HBActiveObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A890D31C89563800859342 /* HBActiveObject.m */; };
 		33A890D71C8959A400859342 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A890D61C8959A400859342 /* LoginViewController.m */; };
+		78B69AF31C8BBB540006F64E /* HBNavigationbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69AF21C8BBB540006F64E /* HBNavigationbar.m */; };
+		78B69AF61C8BC3E20006F64E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69AF51C8BC3E20006F64E /* BaseViewController.m */; };
+		78B69AF91C8BC9E50006F64E /* HBNavigationbar+html.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69AF81C8BC9E50006F64E /* HBNavigationbar+html.m */; };
+		78B69AFC1C8BD4040006F64E /* NSObject+HBHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69AFB1C8BD4040006F64E /* NSObject+HBHUD.m */; };
+		78B69B041C8BD5690006F64E /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B031C8BD5690006F64E /* MBProgressHUD.m */; };
+		78B69B071C8BD6D40006F64E /* GlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B061C8BD6D40006F64E /* GlobalData.m */; };
+		78B69B0A1C8BDADF0006F64E /* SigninModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B091C8BDADF0006F64E /* SigninModel.m */; };
+		78B69B0D1C8BE6980006F64E /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B0C1C8BE6980006F64E /* DiscoveryViewController.m */; };
+		78B69B101C8C0BA30006F64E /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B0F1C8C0BA20006F64E /* SquareViewController.m */; };
+		78B69B1B1C8C1B750006F64E /* RedPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B161C8C1B750006F64E /* RedPoint.m */; };
+		78B69B1C1C8C1B750006F64E /* RKTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B181C8C1B750006F64E /* RKTabItem.m */; };
+		78B69B1D1C8C1B750006F64E /* RKTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B1A1C8C1B750006F64E /* RKTabView.m */; };
+		78B69B201C8C20670006F64E /* UIView+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B1F1C8C20670006F64E /* UIView+Transition.m */; };
+		78B69B241C8C2AFA0006F64E /* SDWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B231C8C2AFA0006F64E /* SDWebImageView.m */; };
+		78B69B271C8C59050006F64E /* DiscoveryTopicPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B261C8C59050006F64E /* DiscoveryTopicPageModel.m */; };
+		78B69B2A1C8C61330006F64E /* RefreshCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B291C8C61330006F64E /* RefreshCollectionView.m */; };
+		78B69B381C8C62710006F64E /* INSCircleInfiniteIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B2E1C8C62710006F64E /* INSCircleInfiniteIndicator.m */; };
+		78B69B391C8C62710006F64E /* INSCirclePullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B301C8C62710006F64E /* INSCirclePullToRefresh.m */; };
+		78B69B3A1C8C62710006F64E /* INSInfiniteScrollBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B331C8C62710006F64E /* INSInfiniteScrollBackgroundView.m */; };
+		78B69B3B1C8C62710006F64E /* INSPullToRefreshBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B351C8C62710006F64E /* INSPullToRefreshBackgroundView.m */; };
+		78B69B3C1C8C62710006F64E /* UIScrollView+INSPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B371C8C62710006F64E /* UIScrollView+INSPullToRefresh.m */; };
+		78B69B3F1C8C687F0006F64E /* PengResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B69B3E1C8C687F0006F64E /* PengResource.m */; };
 		78C772581C8AB2F400461C7E /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C772231C8AB2F400461C7E /* AutoCoding.m */; };
 		78C772591C8AB2F400461C7E /* NSObject+AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C772251C8AB2F400461C7E /* NSObject+AutoCoding.m */; };
 		78C7725A1C8AB2F400461C7E /* NSObject+AutoRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C772271C8AB2F400461C7E /* NSObject+AutoRuntime.m */; };
@@ -2031,6 +2054,54 @@
 		33A890D31C89563800859342 /* HBActiveObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBActiveObject.m; sourceTree = "<group>"; };
 		33A890D51C8959A400859342 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		33A890D61C8959A400859342 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5709A2E0C333831062519DDF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5D8B5F5647D93A57AEC420C1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E278584673D6C22EAE64DB8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		78B69AF11C8BBB540006F64E /* HBNavigationbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNavigationbar.h; sourceTree = "<group>"; };
+		78B69AF21C8BBB540006F64E /* HBNavigationbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNavigationbar.m; sourceTree = "<group>"; };
+		78B69AF41C8BC3E20006F64E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		78B69AF51C8BC3E20006F64E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		78B69AF71C8BC9E50006F64E /* HBNavigationbar+html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HBNavigationbar+html.h"; sourceTree = "<group>"; };
+		78B69AF81C8BC9E50006F64E /* HBNavigationbar+html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HBNavigationbar+html.m"; sourceTree = "<group>"; };
+		78B69AFA1C8BD4040006F64E /* NSObject+HBHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HBHUD.h"; sourceTree = "<group>"; };
+		78B69AFB1C8BD4040006F64E /* NSObject+HBHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HBHUD.m"; sourceTree = "<group>"; };
+		78B69B021C8BD5690006F64E /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		78B69B031C8BD5690006F64E /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		78B69B051C8BD6D40006F64E /* GlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalData.h; sourceTree = "<group>"; };
+		78B69B061C8BD6D40006F64E /* GlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalData.m; sourceTree = "<group>"; };
+		78B69B081C8BDADF0006F64E /* SigninModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SigninModel.h; sourceTree = "<group>"; };
+		78B69B091C8BDADF0006F64E /* SigninModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigninModel.m; sourceTree = "<group>"; };
+		78B69B0B1C8BE6980006F64E /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
+		78B69B0C1C8BE6980006F64E /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
+		78B69B0E1C8C0BA20006F64E /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareViewController.h; sourceTree = "<group>"; };
+		78B69B0F1C8C0BA20006F64E /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
+		78B69B151C8C1B750006F64E /* RedPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedPoint.h; sourceTree = "<group>"; };
+		78B69B161C8C1B750006F64E /* RedPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedPoint.m; sourceTree = "<group>"; };
+		78B69B171C8C1B750006F64E /* RKTabItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTabItem.h; sourceTree = "<group>"; };
+		78B69B181C8C1B750006F64E /* RKTabItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTabItem.m; sourceTree = "<group>"; };
+		78B69B191C8C1B750006F64E /* RKTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKTabView.h; sourceTree = "<group>"; };
+		78B69B1A1C8C1B750006F64E /* RKTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKTabView.m; sourceTree = "<group>"; };
+		78B69B1E1C8C20670006F64E /* UIView+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Transition.h"; sourceTree = "<group>"; };
+		78B69B1F1C8C20670006F64E /* UIView+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Transition.m"; sourceTree = "<group>"; };
+		78B69B221C8C2AFA0006F64E /* SDWebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageView.h; sourceTree = "<group>"; };
+		78B69B231C8C2AFA0006F64E /* SDWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageView.m; sourceTree = "<group>"; };
+		78B69B251C8C59050006F64E /* DiscoveryTopicPageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryTopicPageModel.h; sourceTree = "<group>"; };
+		78B69B261C8C59050006F64E /* DiscoveryTopicPageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryTopicPageModel.m; sourceTree = "<group>"; };
+		78B69B281C8C61330006F64E /* RefreshCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RefreshCollectionView.h; sourceTree = "<group>"; };
+		78B69B291C8C61330006F64E /* RefreshCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RefreshCollectionView.m; sourceTree = "<group>"; };
+		78B69B2D1C8C62710006F64E /* INSCircleInfiniteIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSCircleInfiniteIndicator.h; sourceTree = "<group>"; };
+		78B69B2E1C8C62710006F64E /* INSCircleInfiniteIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSCircleInfiniteIndicator.m; sourceTree = "<group>"; };
+		78B69B2F1C8C62710006F64E /* INSCirclePullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSCirclePullToRefresh.h; sourceTree = "<group>"; };
+		78B69B301C8C62710006F64E /* INSCirclePullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSCirclePullToRefresh.m; sourceTree = "<group>"; };
+		78B69B311C8C62710006F64E /* INSAnimatable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSAnimatable.h; sourceTree = "<group>"; };
+		78B69B321C8C62710006F64E /* INSInfiniteScrollBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSInfiniteScrollBackgroundView.h; sourceTree = "<group>"; };
+		78B69B331C8C62710006F64E /* INSInfiniteScrollBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSInfiniteScrollBackgroundView.m; sourceTree = "<group>"; };
+		78B69B341C8C62710006F64E /* INSPullToRefreshBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSPullToRefreshBackgroundView.h; sourceTree = "<group>"; };
+		78B69B351C8C62710006F64E /* INSPullToRefreshBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSPullToRefreshBackgroundView.m; sourceTree = "<group>"; };
+		78B69B361C8C62710006F64E /* UIScrollView+INSPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+INSPullToRefresh.h"; sourceTree = "<group>"; };
+		78B69B371C8C62710006F64E /* UIScrollView+INSPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+INSPullToRefresh.m"; sourceTree = "<group>"; };
+		78B69B3D1C8C687F0006F64E /* PengResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PengResource.h; sourceTree = "<group>"; };
+		78B69B3E1C8C687F0006F64E /* PengResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PengResource.m; sourceTree = "<group>"; };
 		78C772221C8AB2F400461C7E /* AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoCoding.h; sourceTree = "<group>"; };
 		78C772231C8AB2F400461C7E /* AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCoding.m; sourceTree = "<group>"; };
 		78C772241C8AB2F400461C7E /* NSObject+AutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AutoCoding.h"; sourceTree = "<group>"; };
@@ -2095,12 +2166,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13165471BA0EA66DA18B126B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28B2E24E9E4F7CFBCD68C243 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8B5F5647D93A57AEC420C1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33A888B21C891EB500859342 = {
 			isa = PBXGroup;
 			children = (
@@ -2109,6 +2189,8 @@
 				33A88A221C891F8E00859342 /* samurai-webcore */,
 				33A888BD1C891EB600859342 /* samurai-peng */,
 				33A888BC1C891EB500859342 /* Products */,
+				78D38E9B38DA7282BBABE30E /* Pods */,
+				28B2E24E9E4F7CFBCD68C243 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2130,8 +2212,14 @@
 				33A88D461C89561B00859342 /* network */,
 				33A888C11C891EB600859342 /* AppDelegate.h */,
 				33A888C21C891EB600859342 /* AppDelegate.m */,
+				78B69AF41C8BC3E20006F64E /* BaseViewController.h */,
+				78B69AF51C8BC3E20006F64E /* BaseViewController.m */,
 				33A888C41C891EB600859342 /* RootViewController.h */,
 				33A888C51C891EB600859342 /* RootViewController.m */,
+				78B69B0B1C8BE6980006F64E /* DiscoveryViewController.h */,
+				78B69B0C1C8BE6980006F64E /* DiscoveryViewController.m */,
+				78B69B0E1C8C0BA20006F64E /* SquareViewController.h */,
+				78B69B0F1C8C0BA20006F64E /* SquareViewController.m */,
 				33A890D51C8959A400859342 /* LoginViewController.h */,
 				33A890D61C8959A400859342 /* LoginViewController.m */,
 				33A888C71C891EB600859342 /* Main.storyboard */,
@@ -3959,9 +4047,70 @@
 			path = resp;
 			sourceTree = "<group>";
 		};
+		78B69B011C8BD5690006F64E /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				78B69B021C8BD5690006F64E /* MBProgressHUD.h */,
+				78B69B031C8BD5690006F64E /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		78B69B141C8C1B750006F64E /* RKTabView */ = {
+			isa = PBXGroup;
+			children = (
+				78B69B151C8C1B750006F64E /* RedPoint.h */,
+				78B69B161C8C1B750006F64E /* RedPoint.m */,
+				78B69B171C8C1B750006F64E /* RKTabItem.h */,
+				78B69B181C8C1B750006F64E /* RKTabItem.m */,
+				78B69B191C8C1B750006F64E /* RKTabView.h */,
+				78B69B1A1C8C1B750006F64E /* RKTabView.m */,
+			);
+			path = RKTabView;
+			sourceTree = "<group>";
+		};
+		78B69B211C8C2AFA0006F64E /* SDWebImageView */ = {
+			isa = PBXGroup;
+			children = (
+				78B69B221C8C2AFA0006F64E /* SDWebImageView.h */,
+				78B69B231C8C2AFA0006F64E /* SDWebImageView.m */,
+			);
+			path = SDWebImageView;
+			sourceTree = "<group>";
+		};
+		78B69B2B1C8C62710006F64E /* INSPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				78B69B2C1C8C62710006F64E /* Circle */,
+				78B69B311C8C62710006F64E /* INSAnimatable.h */,
+				78B69B321C8C62710006F64E /* INSInfiniteScrollBackgroundView.h */,
+				78B69B331C8C62710006F64E /* INSInfiniteScrollBackgroundView.m */,
+				78B69B341C8C62710006F64E /* INSPullToRefreshBackgroundView.h */,
+				78B69B351C8C62710006F64E /* INSPullToRefreshBackgroundView.m */,
+				78B69B361C8C62710006F64E /* UIScrollView+INSPullToRefresh.h */,
+				78B69B371C8C62710006F64E /* UIScrollView+INSPullToRefresh.m */,
+			);
+			path = INSPullToRefresh;
+			sourceTree = "<group>";
+		};
+		78B69B2C1C8C62710006F64E /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				78B69B2D1C8C62710006F64E /* INSCircleInfiniteIndicator.h */,
+				78B69B2E1C8C62710006F64E /* INSCircleInfiniteIndicator.m */,
+				78B69B2F1C8C62710006F64E /* INSCirclePullToRefresh.h */,
+				78B69B301C8C62710006F64E /* INSCirclePullToRefresh.m */,
+			);
+			path = Circle;
+			sourceTree = "<group>";
+		};
 		78C772201C8AB2F400461C7E /* shared_library */ = {
 			isa = PBXGroup;
 			children = (
+				78B69B1E1C8C20670006F64E /* UIView+Transition.h */,
+				78B69B1F1C8C20670006F64E /* UIView+Transition.m */,
+				78B69B141C8C1B750006F64E /* RKTabView */,
+				78B69B011C8BD5690006F64E /* MBProgressHUD */,
 				78C7727A1C8AC7D400461C7E /* NSObject-ObjectMap */,
 				78C772211C8AB2F400461C7E /* AutoCoding */,
 				78C772281C8AB2F400461C7E /* EMString */,
@@ -4053,6 +4202,8 @@
 		78C772741C8AB3A400461C7E /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				78B69B051C8BD6D40006F64E /* GlobalData.h */,
+				78B69B061C8BD6D40006F64E /* GlobalData.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -4060,10 +4211,16 @@
 		78C772751C8AB3A400461C7E /* model */ = {
 			isa = PBXGroup;
 			children = (
+				78B69B3D1C8C687F0006F64E /* PengResource.h */,
+				78B69B3E1C8C687F0006F64E /* PengResource.m */,
 				78C7727E1C8AD2D500461C7E /* PENGClient.h */,
 				78C7727F1C8AD2D500461C7E /* PENGClient.m */,
 				78C772771C8AB3B300461C7E /* model.h */,
 				78C772781C8AB3B300461C7E /* model.m */,
+				78B69B251C8C59050006F64E /* DiscoveryTopicPageModel.h */,
+				78B69B261C8C59050006F64E /* DiscoveryTopicPageModel.m */,
+				78B69B081C8BDADF0006F64E /* SigninModel.h */,
+				78B69B091C8BDADF0006F64E /* SigninModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -4071,6 +4228,16 @@
 		78C772761C8AB3A400461C7E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				78B69B211C8C2AFA0006F64E /* SDWebImageView */,
+				78B69AFA1C8BD4040006F64E /* NSObject+HBHUD.h */,
+				78B69AFB1C8BD4040006F64E /* NSObject+HBHUD.m */,
+				78B69AF11C8BBB540006F64E /* HBNavigationbar.h */,
+				78B69AF21C8BBB540006F64E /* HBNavigationbar.m */,
+				78B69AF71C8BC9E50006F64E /* HBNavigationbar+html.h */,
+				78B69AF81C8BC9E50006F64E /* HBNavigationbar+html.m */,
+				78B69B281C8C61330006F64E /* RefreshCollectionView.h */,
+				78B69B291C8C61330006F64E /* RefreshCollectionView.m */,
+				78B69B2B1C8C62710006F64E /* INSPullToRefresh */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -4084,6 +4251,15 @@
 			path = "NSObject-ObjectMap";
 			sourceTree = "<group>";
 		};
+		78D38E9B38DA7282BBABE30E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E278584673D6C22EAE64DB8 /* Pods.debug.xcconfig */,
+				5709A2E0C333831062519DDF /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -4091,9 +4267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33A888D21C891EB600859342 /* Build configuration list for PBXNativeTarget "samurai-peng" */;
 			buildPhases = (
+				0E10A2EF90A31958152356D2 /* Check Pods Manifest.lock */,
 				33A888B71C891EB500859342 /* Sources */,
 				33A888B81C891EB500859342 /* Frameworks */,
 				33A888B91C891EB500859342 /* Resources */,
+				A56B23311AE6E91745F257BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -4156,6 +4334,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E10A2EF90A31958152356D2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A56B23311AE6E91745F257BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33A888B71C891EB500859342 /* Sources */ = {
@@ -4278,6 +4489,7 @@
 				33A8906C1C89562500859342 /* FollowResp.m in Sources */,
 				33A88C4B1C891F8E00859342 /* fishhook.c in Sources */,
 				33A88D1F1C891F8F00859342 /* AFHTTPRequestOperationManager.m in Sources */,
+				78B69B3B1C8C62710006F64E /* INSPullToRefreshBackgroundView.m in Sources */,
 				33A88C891C891F8E00859342 /* Samurai_CSSNumberMm.m in Sources */,
 				33A88C301C891F8E00859342 /* Samurai_RenderStyle.m in Sources */,
 				33A88FDE1C89562500859342 /* InterestUserListReq.m in Sources */,
@@ -4285,6 +4497,7 @@
 				33A88C521C891F8E00859342 /* ServiceGestureHook.m in Sources */,
 				33A88CCC1C891F8F00859342 /* Samurai_HtmlElementElement.m in Sources */,
 				33A88C0E1C891F8E00859342 /* UIViewController+NavigationBar.m in Sources */,
+				78B69AFC1C8BD4040006F64E /* NSObject+HBHUD.m in Sources */,
 				33A890851C89562500859342 /* NewsInfoResp.m in Sources */,
 				33A88D361C891F8F00859342 /* selector.c in Sources */,
 				33A88CE11C891F8F00859342 /* Samurai_HtmlElementInputRadio.m in Sources */,
@@ -4336,9 +4549,11 @@
 				33A88CA01C891F8E00859342 /* UICollectionViewCell+Html.m in Sources */,
 				33A88CC21C891F8F00859342 /* Samurai_HtmlElementCaption.m in Sources */,
 				33A88CB01C891F8E00859342 /* Samurai_HtmlDocument.m in Sources */,
+				78B69B1B1C8C1B750006F64E /* RedPoint.m in Sources */,
 				33A890221C89562500859342 /* UserFollowChipsReq.m in Sources */,
 				33A88FB41C89562500859342 /* ContactListReq.m in Sources */,
 				33A88CA71C891F8E00859342 /* UIStepper+Html.m in Sources */,
+				78B69B101C8C0BA30006F64E /* SquareViewController.m in Sources */,
 				33A88BE11C891F8E00859342 /* NSMutableSet+Extension.m in Sources */,
 				33A88FCD1C89562500859342 /* FollowBatchReq.m in Sources */,
 				33A890811C89562500859342 /* MusicPageResp.m in Sources */,
@@ -4350,6 +4565,7 @@
 				33A88CAD1C891F8E00859342 /* UIToolbar+Html.m in Sources */,
 				33A88D241C891F8F00859342 /* AFURLRequestSerialization.m in Sources */,
 				33A890621C89562500859342 /* EvaluateTopicResp.m in Sources */,
+				78B69B0D1C8BE6980006F64E /* DiscoveryViewController.m in Sources */,
 				33A88C631C891F8E00859342 /* ServiceMonitorFPSModel.m in Sources */,
 				33A88C5F1C891F8E00859342 /* JBChartView.m in Sources */,
 				33A890341C89562500859342 /* ActorItem.m in Sources */,
@@ -4365,6 +4581,7 @@
 				33A88FF71C89562500859342 /* PiazzaPageReq.m in Sources */,
 				33A8901C1C89562500859342 /* UserBlackListReq.m in Sources */,
 				33A88BDC1C891F8E00859342 /* NSData+Extension.m in Sources */,
+				78B69B201C8C20670006F64E /* UIView+Transition.m in Sources */,
 				78C7725F1C8AB2F400461C7E /* MKAnnotationView+WebCache.m in Sources */,
 				33A88FFE1C89562500859342 /* ReadedPmsgReq.m in Sources */,
 				33A890A31C89562500859342 /* SMSLoginResp2.m in Sources */,
@@ -4373,6 +4590,7 @@
 				33A88FDD1C89562500859342 /* HotTopicsReq.m in Sources */,
 				33A890511C89562500859342 /* ContactListResp.m in Sources */,
 				33A88C1A1C891F8E00859342 /* Samurai_UISlider.m in Sources */,
+				78B69B381C8C62710006F64E /* INSCircleInfiniteIndicator.m in Sources */,
 				33A890311C89562500859342 /* Req.m in Sources */,
 				33A88FC51C89562500859342 /* EventHotTopicsReq.m in Sources */,
 				33A890BB1C89562500859342 /* UserContact.m in Sources */,
@@ -4442,6 +4660,7 @@
 				33A88BDE1C891F8E00859342 /* NSDictionary+Extension.m in Sources */,
 				33A890971C89562500859342 /* PmsgItem.m in Sources */,
 				33A890C31C89562500859342 /* UserInfoFollowing.m in Sources */,
+				78B69B3C1C8C62710006F64E /* UIScrollView+INSPullToRefresh.m in Sources */,
 				33A890211C89562500859342 /* UserCoursePageReq.m in Sources */,
 				33A88CC11C891F8F00859342 /* Samurai_HtmlElementCanvas.m in Sources */,
 				33A890701C89562500859342 /* GetPasswordResp.m in Sources */,
@@ -4469,6 +4688,7 @@
 				33A890591C89562500859342 /* DelCommentResp.m in Sources */,
 				33A8904C1C89562500859342 /* CommentResp.m in Sources */,
 				33A88CA91C891F8E00859342 /* UITableView+Html.m in Sources */,
+				78B69B3F1C8C687F0006F64E /* PengResource.m in Sources */,
 				33A88C6F1C891F8E00859342 /* Samurai_CSSParser.m in Sources */,
 				33A88CD11C891F8F00859342 /* Samurai_HtmlElementH2.m in Sources */,
 				33A88C1E1C891F8E00859342 /* Samurai_UITableViewCell.m in Sources */,
@@ -4481,12 +4701,14 @@
 				33A88C511C891F8E00859342 /* ServiceGesture.m in Sources */,
 				33A890431C89562500859342 /* ChipsPayInfoResp.m in Sources */,
 				33A88CAF1C891F8E00859342 /* UIWebView+Html.m in Sources */,
+				78B69AF31C8BBB540006F64E /* HBNavigationbar.m in Sources */,
 				33A8909B1C89562500859342 /* RegisterResult.m in Sources */,
 				33A88D011C891F8F00859342 /* Samurai_HtmlElementViewport.m in Sources */,
 				33A88CC01C891F8F00859342 /* Samurai_HtmlElementButton.m in Sources */,
 				33A88BE61C891F8E00859342 /* Samurai_Encoding.m in Sources */,
 				33A88C291C891F8E00859342 /* Samurai_Intent.m in Sources */,
 				33A88FD01C89562500859342 /* FollowTopicPageReq.m in Sources */,
+				78B69B1D1C8C1B750006F64E /* RKTabView.m in Sources */,
 				78C772681C8AB2F400461C7E /* UIButton+WebCache.m in Sources */,
 				33A88CE31C891F8F00859342 /* Samurai_HtmlElementInputSubmit.m in Sources */,
 				33A8901A1C89562500859342 /* UpdatePassWordReq.m in Sources */,
@@ -4522,11 +4744,13 @@
 				33A890C11C89562500859342 /* UserImageResp.m in Sources */,
 				33A88D231C891F8F00859342 /* AFURLConnectionOperation.m in Sources */,
 				33A88FFB1C89562500859342 /* PmsgOverviewReq.m in Sources */,
+				78B69AF61C8BC3E20006F64E /* BaseViewController.m in Sources */,
 				33A88C531C891F8E00859342 /* ServiceGestureSetting.m in Sources */,
 				33A8904F1C89562500859342 /* ComparatorByTime.m in Sources */,
 				33A88BDF1C891F8E00859342 /* NSMutableArray+Extension.m in Sources */,
 				33A88C0B1C891F8E00859342 /* Signal+ViewController.m in Sources */,
 				33A88CCF1C891F8F00859342 /* Samurai_HtmlElementForm.m in Sources */,
+				78B69B3A1C8C62710006F64E /* INSInfiniteScrollBackgroundView.m in Sources */,
 				33A88D0B1C891F8F00859342 /* Samurai_HtmlRenderElement.m in Sources */,
 				33A88C3F1C891F8E00859342 /* Samurai_Font.m in Sources */,
 				78C7726E1C8AB2F400461C7E /* UIView+WebCacheOperation.m in Sources */,
@@ -4547,6 +4771,7 @@
 				33A88CC71C891F8F00859342 /* Samurai_HtmlElementDd.m in Sources */,
 				33A8903F1C89562500859342 /* ChipsInfoResp.m in Sources */,
 				78C772801C8AD2D500461C7E /* PENGClient.m in Sources */,
+				78B69B391C8C62710006F64E /* INSCirclePullToRefresh.m in Sources */,
 				33A88FF41C89562500859342 /* PengWebRegisterReq.m in Sources */,
 				78C7725B1C8AB2F400461C7E /* EMMarkupProperty.m in Sources */,
 				33A890611C89562500859342 /* EditCourseResp.m in Sources */,
@@ -4582,6 +4807,7 @@
 				78C772671C8AB2F400461C7E /* SDWebImagePrefetcher.m in Sources */,
 				33A88FB61C89562500859342 /* CoursePageReq.m in Sources */,
 				33A890981C89562500859342 /* PmsgOverview.m in Sources */,
+				78B69B2A1C8C61330006F64E /* RefreshCollectionView.m in Sources */,
 				33A890491C89562500859342 /* CoinLogResp.m in Sources */,
 				33A88FF01C89562500859342 /* PengLoginReq.m in Sources */,
 				33A88BEA1C891F8E00859342 /* Samurai_Property.m in Sources */,
@@ -4614,6 +4840,7 @@
 				33A88D001C891F8F00859342 /* Samurai_HtmlElementUl.m in Sources */,
 				33A890991C89562500859342 /* QueryTagLibResp.m in Sources */,
 				33A890931C89562500859342 /* PengWebUserInfoResp.m in Sources */,
+				78B69B1C1C8C1B750006F64E /* RKTabItem.m in Sources */,
 				33A88C071C891F8E00859342 /* Samurai_ServiceLoader.m in Sources */,
 				33A88CEE1C891F8F00859342 /* Samurai_HtmlElementPre.m in Sources */,
 				33A88CE61C891F8F00859342 /* Samurai_HtmlElementLegend.m in Sources */,
@@ -4645,6 +4872,7 @@
 				33A88C181C891F8E00859342 /* Samurai_UIProgressView.m in Sources */,
 				33A88FBD1C89562500859342 /* DelCourseReq.m in Sources */,
 				33A88BF71C891F8E00859342 /* Samurai_NotificationCenter.m in Sources */,
+				78B69B071C8BD6D40006F64E /* GlobalData.m in Sources */,
 				33A88CED1C891F8F00859342 /* Samurai_HtmlElementP.m in Sources */,
 				33A88D311C891F8F00859342 /* vector.c in Sources */,
 				33A890741C89562500859342 /* GiftOrderPageResp.m in Sources */,
@@ -4679,6 +4907,7 @@
 				33A88FED1C89562500859342 /* PayInfoReq.m in Sources */,
 				33A88CD21C891F8F00859342 /* Samurai_HtmlElementH3.m in Sources */,
 				33A8900E1C89562500859342 /* SubmitVersionReq.m in Sources */,
+				78B69B041C8BD5690006F64E /* MBProgressHUD.m in Sources */,
 				33A88BF51C891F8E00859342 /* Samurai_Notification.m in Sources */,
 				33A88CB41C891F8E00859342 /* Samurai_HtmlDocumentWorklet_30ParseResource.m in Sources */,
 				33A88C6A1C891F8E00859342 /* ServiceTapspotView.m in Sources */,
@@ -4755,6 +4984,7 @@
 				33A890261C89562500859342 /* UserFollowsReq.m in Sources */,
 				33A88FBF1C89562500859342 /* DelTopicReq.m in Sources */,
 				33A88C411C891F8E00859342 /* Samurai_Metric.m in Sources */,
+				78B69AF91C8BC9E50006F64E /* HBNavigationbar+html.m in Sources */,
 				33A88C001C891F8E00859342 /* Samurai_Model.m in Sources */,
 				33A88C3E1C891F8E00859342 /* Samurai_Color.m in Sources */,
 				33A890C21C89562500859342 /* UserInfo.m in Sources */,
@@ -4769,11 +4999,13 @@
 				33A88FDC1C89562500859342 /* HistoryPmsgReq.m in Sources */,
 				33A88FC41C89562500859342 /* EventDetailReq.m in Sources */,
 				33A88C201C891F8E00859342 /* Samurai_UITextView.m in Sources */,
+				78B69B271C8C59050006F64E /* DiscoveryTopicPageModel.m in Sources */,
 				33A88D291C891F8F00859342 /* error.c in Sources */,
 				33A88FBC1C89562500859342 /* DelCommentReq.m in Sources */,
 				33A890321C89562500859342 /* AccountRelationResult.m in Sources */,
 				33A88C451C891F8E00859342 /* Samurai_ViewConfig.m in Sources */,
 				33A88CCB1C891F8F00859342 /* Samurai_HtmlElementDt.m in Sources */,
+				78B69B0A1C8BDADF0006F64E /* SigninModel.m in Sources */,
 				33A88FF21C89562500859342 /* PengWebLoginReq.m in Sources */,
 				33A888C31C891EB600859342 /* AppDelegate.m in Sources */,
 				33A88FD91C89562500859342 /* GiftOredersReq.m in Sources */,
@@ -4811,6 +5043,7 @@
 				33A88C261C891F8E00859342 /* Samurai_ActivityRouter.m in Sources */,
 				33A88C691C891F8E00859342 /* ServiceTapspotManager.m in Sources */,
 				33A88C771C891F8E00859342 /* Samurai_CSSColor.m in Sources */,
+				78B69B241C8C2AFA0006F64E /* SDWebImageView.m in Sources */,
 				78C772591C8AB2F400461C7E /* NSObject+AutoCoding.m in Sources */,
 				33A88C431C891F8E00859342 /* Samurai_ViewUtility.m in Sources */,
 				33A88C0C1C891F8E00859342 /* UIView+SignalHandling.m in Sources */,
@@ -4953,6 +5186,7 @@
 		};
 		33A888D31C891EB600859342 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E278584673D6C22EAE64DB8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "samurai-peng/Info.plist";
@@ -4965,6 +5199,7 @@
 		};
 		33A888D41C891EB600859342 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5709A2E0C333831062519DDF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "samurai-peng/Info.plist";

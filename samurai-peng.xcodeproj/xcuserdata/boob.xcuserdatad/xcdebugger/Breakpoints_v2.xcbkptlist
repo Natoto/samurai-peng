@@ -58,7 +58,7 @@
                   moduleName = "samurai-peng"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/boob/Documents/workspace/samurai-peng/samurai-peng/shared_library/STIHTTPNetwork/STIHTTPSessionManager.m"
-                  timestampString = "478867918.923"
+                  timestampString = "478964860.176254"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "119"
@@ -73,7 +73,7 @@
                   moduleName = "samurai-peng"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/boob/Documents/workspace/samurai-peng/samurai-peng/shared_library/STIHTTPNetwork/STIHTTPSessionManager.m"
-                  timestampString = "478867918.923454"
+                  timestampString = "478964860.176817"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "119"
@@ -105,13 +105,27 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "samurai-peng/model/model.m"
-            timestampString = "478867932.629031"
+            filePath = "samurai-peng/AppDelegate.m"
+            timestampString = "478964007.764706"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "-refresh"
+            startingLineNumber = "219"
+            endingLineNumber = "219">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "samurai-webcore/modules/html-document/Samurai_HtmlDocument.m"
+            timestampString = "478921992.388241"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
+            landmarkName = "-configureForViewController:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

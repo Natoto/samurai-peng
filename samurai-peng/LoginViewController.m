@@ -17,7 +17,7 @@
     UITextField *	_t2;
 }
 
-@model( LoginModel *,		loginmodel );
+@model( SigninModel *,		loginmodel );
 @end
 
 @implementation LoginViewController
@@ -32,23 +32,31 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.loginmodel = [LoginModel new];
-    [self.loginmodel addSignalResponder:self];
     [self loadTemplate:@"/www/html/login.html"];
+    self.loginmodel = [SigninModel new];
+    [self.loginmodel addSignalResponder:self];
     
-    self.onSignal(LoginModel.eventLoading,^{
+    self.showBackItem = YES;
     
+    self.onSignal(SigninModel.eventLoading,^{
+        [self presentLoadingTips:@"登录中..."];
         NSLog(@"正在登录中...");
     });
     
-    self.onSignal(LoginModel.eventLoaded,^{
-        
-        NSLog(@"登录成功");
+    self.onSignal(SigninModel.eventLoaded,^{
+        [self dismissAllTips];
+        [self presentMessageTips:@"登录成功" dismisblock:^{
+            NSLog(@"登录成功");
+            [self backtoparent:nil];
+        }];
     });
     
-    self.onSignal(LoginModel.eventError,^{
+    self.onSignal(SigninModel.eventError,^{
+        [self dismissAllTips];
         NSLog(@"请求错误");
-        
+        [self presentMessageTips:@"登录失败" dismisblock:^{
+            NSLog(@"登录失败");
+        }];
     });
     
 }

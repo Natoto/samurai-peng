@@ -3,3 +3,19 @@
 	-samurai-view-class: 'UIView';
 }
 
+HBNavigationbar{
+    display:block;
+    width: 100%;
+    height:64;
+    background-color:#ffb612;
+}
+
+
+img, image {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+    -samurai-view-hierarchy: 'leaf';
+    -samurai-view-class: 'SDWebImageView';
+}

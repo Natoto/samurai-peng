@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface RootViewController : UIViewController
-
-
+#import "BaseViewController.h"
+#import "DiscoveryViewController.h"
+#import "SquareViewController.h"
+@interface RootViewController : BaseViewController
+@property(nonatomic,strong) DiscoveryViewController * discoveyctr;
+@property(nonatomic,strong) SquareViewController    * squarectr;
 @end
 

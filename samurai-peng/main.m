@@ -16,6 +16,9 @@ int main(int argc, char * argv[]) {
 #if DEBUG
         [[SamuraiWatcher sharedInstance] watch:@(__FILE__)];
 #endif
+        
+        
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

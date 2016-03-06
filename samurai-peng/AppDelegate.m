@@ -6,8 +6,7 @@
 //  Copyright © 2016年 peng. All rights reserved.
 //
 
-#import "AppDelegate.h"
-
+#import "AppDelegate.h" 
 #import "Samurai_Image.h"
 @interface AppDelegate ()
 
@@ -15,17 +14,18 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
  
     // Override point for customization after application launch.
     
+      
     CGSize		shadowSize = CGSizeMake( [UIScreen mainScreen].bounds.size.width, 1.0f );
     UIImage *	shadowImage = [UIImage imageWithColor:[UIColor orangeColor] size:shadowSize];
     
-    [[UINavigationBar appearance] setShadowImage:shadowImage];
+//    [[UINavigationBar appearance] setShadowImage:shadowImage];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
