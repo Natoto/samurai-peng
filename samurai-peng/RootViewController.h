@@ -10,8 +10,11 @@
 #import "BaseViewController.h"
 #import "DiscoveryViewController.h"
 #import "SquareViewController.h"
+#import "Discovery2ViewController.h"
+
 @interface RootViewController : BaseViewController
 @property(nonatomic,strong) DiscoveryViewController * discoveyctr;
 @property(nonatomic,strong) SquareViewController    * squarectr;
+@property(nonatomic,strong) Discovery2ViewController * minectr;
 @end
 

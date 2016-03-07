@@ -16,8 +16,8 @@
 #import "PENGClient.h"
 @interface DiscoveryTopicPageModel : BaseModel
 
+@prop_strong( NSMutableArray *,		items )
 @prop_strong(NSNumber *, fromTopicId);
-@prop_strong(DiscoveryTopicPageResult *,resp)
 @signal( eventLoading )
 @signal( eventLoaded )
 @signal( eventError )

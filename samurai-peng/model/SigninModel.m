@@ -10,15 +10,19 @@
 #import "PENGClient.h"
 #import "SMSLoginReq2.h"
 #import "GlobalData.h"
+#import "PassportLoginReq.h"
 
 @interface SigninModel ()
 @end
 @implementation SigninModel
-
+@def_singleton(SigninModel)
 @def_prop_strong( PengLoginResp *,		resp)
 @def_signal( eventLoading )
 @def_signal( eventLoaded )
 @def_signal( eventError )
+
+
+@def_signal(loginsuccess)
 
 - (id)init
 {
@@ -99,6 +103,39 @@
         [self sendSignal:self.eventError];
     }];
     [self sendSignal:self.eventLoading];
-   }
+}
+
+
+#pragma -mark 通行证登陆（新）
+-(void)req_PassportLoginWithMobile:(NSString *)mobile
+                          passport:(NSString *)passport
+                          response:(void (^)(PassportLoginResp * response))response
+                      errorHandler:(void (^)(NSError * error))err
+{
+    PassportLoginReq * req = [[PassportLoginReq alloc] init];
+    req.deviceToken = @"pengpengDeviceToken";//@"test1";
+    req.mobile = mobile;
+    req.passport = passport;
+    req.msgType = @"PassportLoginReq";
+    NSDictionary * dic = [req objectDictionary];
+    
+    PENGClient *manager = [PENGClient sharedClient];
+    [manager POST:PENGAPIBaseURLString parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSString *responsejson = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
+          PassportLoginResp * resp =  [[PassportLoginResp alloc] initWithJSONData:[responsejson dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        if (1 == resp.rtnCode.integerValue)
+        {
+            [GlobalData sharedInstance].m_loginResp.userInfo = resp.userInfo;
+            [GlobalData sharedInstance].m_uid = [NSString stringWithFormat:@"%@",resp.userInfo.uid];
+            [GlobalData sharedInstance].m_sessionId = [NSString stringWithFormat:@"%@",resp.userInfo.sessionId];
+            [GlobalData sharedInstance].m_pengUserAvatar = [NSString stringWithFormat:@"%@",resp.userInfo.avatar];
+        } 
+        [self sendSignal:self.loginsuccess];
+        response(resp);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        err(error);
+    }];
+}
 
 @end

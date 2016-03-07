@@ -15,10 +15,7 @@ int main(int argc, char * argv[]) {
     @autoreleasepool {
 #if DEBUG
         [[SamuraiWatcher sharedInstance] watch:@(__FILE__)];
-#endif
-        
-        
-        
+#endif 
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

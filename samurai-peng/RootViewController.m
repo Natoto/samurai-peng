@@ -12,6 +12,9 @@
 #import "RKTabView.h"
 #import "UIView+Transition.h"
 #import "PENGClient.h"
+#import "SigninModel.h"
+#import "GlobalData.h"
+
 typedef enum : NSUInteger {
     ROOT_TYPE_DIS,
     ROOT_TYPE_SQUARE,
@@ -43,11 +46,29 @@ typedef enum : NSUInteger {
     [self.view bringSubviewToFront:self.tabbar];
     
     [PENGClient fetch_PengResourceService:^(NSString *response) {
-         
-        
+        NSLog(@"%@",response);
     } errorHandler:^(NSError *err) {
         
     }];
+    
+    NSString * mobile = [GlobalData sharedInstance].m_mobile;
+    NSString * passport = [GlobalData sharedInstance].m_passport;
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        @weakify(self)
+        [self presentLoadingTips:@"自动登录中..."];
+        [[SigninModel sharedInstance] req_PassportLoginWithMobile:mobile passport:passport response:^(PassportLoginResp *response) { @strongify(self)
+            [self dismissAllTips];
+            if (response.rtnCode.intValue != 1) { 
+                [self login:nil];
+            }
+            else
+            {
+            }
+        } errorHandler:^(NSError *error) {
+        }];
+    });
+    
 }
 
 
@@ -60,9 +81,10 @@ typedef enum : NSUInteger {
 {
     LoginViewController * vc = [LoginViewController new];
     [self.navigationController presentViewController:vc animated:YES completion:^{
-        
     }];
 }
+
+
 -(IBAction)navigationbarTap:(id)sender
 {
     NSLog(@"%s",__func__);
@@ -90,6 +112,7 @@ typedef enum : NSUInteger {
             break;
             
         case ROOT_TYPE_MINE:
+            curview = self.minectr.view;
             break;
         default:
             break;
@@ -122,6 +145,14 @@ typedef enum : NSUInteger {
     return _squarectr;
 }
 
+-(Discovery2ViewController *)minectr
+{
+    if (!_minectr) {
+        _minectr = [Discovery2ViewController new];
+    }
+    return _minectr;
+}
+
 -(RKTabView *)tabbar
 {
     if (!_tabbar) {
@@ -152,4 +183,6 @@ typedef enum : NSUInteger {
     }
     return _tabbar;
 }
+
+
 @end

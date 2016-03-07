@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		13165471BA0EA66DA18B126B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D8B5F5647D93A57AEC420C1 /* libPods.a */; };
+		333923A91C8D1B010096184C /* CacheCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923A81C8D1B010096184C /* CacheCenter.m */; };
+		333923AC1C8D1B250096184C /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923AB1C8D1B250096184C /* YTKKeyValueStore.m */; };
+		333923BC1C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923B01C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.m */; };
+		333923BD1C8D1B4D0096184C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923B31C8D1B4D0096184C /* FMDatabase.m */; };
+		333923BE1C8D1B4D0096184C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923B51C8D1B4D0096184C /* FMDatabaseAdditions.m */; };
+		333923BF1C8D1B4D0096184C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923B71C8D1B4D0096184C /* FMDatabasePool.m */; };
+		333923C01C8D1B4D0096184C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923B91C8D1B4D0096184C /* FMDatabaseQueue.m */; };
+		333923C11C8D1B4D0096184C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923BB1C8D1B4D0096184C /* FMResultSet.m */; };
+		333923C31C8D1CCF0096184C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 333923C21C8D1CCF0096184C /* libsqlite3.0.tbd */; };
+		333923C61C8D30230096184C /* Discovery2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923C51C8D30230096184C /* Discovery2ViewController.m */; };
+		333923CD1C8D33AB0096184C /* ImageCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 333923CB1C8D33AB0096184C /* ImageCollectionCell.m */; };
+		333923CE1C8D33AB0096184C /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333923CC1C8D33AB0096184C /* ImageCollectionCell.xib */; };
 		33A888C01C891EB600859342 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A888BF1C891EB600859342 /* main.m */; };
 		33A888C31C891EB600859342 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A888C21C891EB600859342 /* AppDelegate.m */; };
 		33A888C61C891EB600859342 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33A888C51C891EB600859342 /* RootViewController.m */; };
@@ -726,6 +738,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333923A71C8D1B010096184C /* CacheCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheCenter.h; sourceTree = "<group>"; };
+		333923A81C8D1B010096184C /* CacheCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheCenter.m; sourceTree = "<group>"; };
+		333923AA1C8D1B250096184C /* YTKKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStore.h; sourceTree = "<group>"; };
+		333923AB1C8D1B250096184C /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
+		333923AF1C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMDatabase+InMemoryOnDiskIO.h"; sourceTree = "<group>"; };
+		333923B01C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMDatabase+InMemoryOnDiskIO.m"; sourceTree = "<group>"; };
+		333923B21C8D1B4D0096184C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		333923B31C8D1B4D0096184C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		333923B41C8D1B4D0096184C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		333923B51C8D1B4D0096184C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		333923B61C8D1B4D0096184C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		333923B71C8D1B4D0096184C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		333923B81C8D1B4D0096184C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		333923B91C8D1B4D0096184C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		333923BA1C8D1B4D0096184C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		333923BB1C8D1B4D0096184C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		333923C21C8D1CCF0096184C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		333923C41C8D30230096184C /* Discovery2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Discovery2ViewController.h; sourceTree = "<group>"; };
+		333923C51C8D30230096184C /* Discovery2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Discovery2ViewController.m; sourceTree = "<group>"; };
+		333923CA1C8D33AB0096184C /* ImageCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionCell.h; sourceTree = "<group>"; };
+		333923CB1C8D33AB0096184C /* ImageCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionCell.m; sourceTree = "<group>"; };
+		333923CC1C8D33AB0096184C /* ImageCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
 		33A888BB1C891EB500859342 /* samurai-peng.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "samurai-peng.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33A888BF1C891EB600859342 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		33A888C11C891EB600859342 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2166,6 +2200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333923C31C8D1CCF0096184C /* libsqlite3.0.tbd in Frameworks */,
 				13165471BA0EA66DA18B126B /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2176,9 +2211,56 @@
 		28B2E24E9E4F7CFBCD68C243 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				333923C21C8D1CCF0096184C /* libsqlite3.0.tbd */,
 				5D8B5F5647D93A57AEC420C1 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		333923A61C8D1B010096184C /* HBCacheCenter */ = {
+			isa = PBXGroup;
+			children = (
+				333923AA1C8D1B250096184C /* YTKKeyValueStore.h */,
+				333923AB1C8D1B250096184C /* YTKKeyValueStore.m */,
+				333923A71C8D1B010096184C /* CacheCenter.h */,
+				333923A81C8D1B010096184C /* CacheCenter.m */,
+			);
+			path = HBCacheCenter;
+			sourceTree = "<group>";
+		};
+		333923AD1C8D1B4D0096184C /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				333923AE1C8D1B4D0096184C /* extra */,
+				333923B11C8D1B4D0096184C /* src */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		333923AE1C8D1B4D0096184C /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				333923AF1C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.h */,
+				333923B01C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.m */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		333923B11C8D1B4D0096184C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				333923B21C8D1B4D0096184C /* FMDatabase.h */,
+				333923B31C8D1B4D0096184C /* FMDatabase.m */,
+				333923B41C8D1B4D0096184C /* FMDatabaseAdditions.h */,
+				333923B51C8D1B4D0096184C /* FMDatabaseAdditions.m */,
+				333923B61C8D1B4D0096184C /* FMDatabasePool.h */,
+				333923B71C8D1B4D0096184C /* FMDatabasePool.m */,
+				333923B81C8D1B4D0096184C /* FMDatabaseQueue.h */,
+				333923B91C8D1B4D0096184C /* FMDatabaseQueue.m */,
+				333923BA1C8D1B4D0096184C /* FMResultSet.h */,
+				333923BB1C8D1B4D0096184C /* FMResultSet.m */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		33A888B21C891EB500859342 = {
@@ -2218,6 +2300,8 @@
 				33A888C51C891EB600859342 /* RootViewController.m */,
 				78B69B0B1C8BE6980006F64E /* DiscoveryViewController.h */,
 				78B69B0C1C8BE6980006F64E /* DiscoveryViewController.m */,
+				333923C41C8D30230096184C /* Discovery2ViewController.h */,
+				333923C51C8D30230096184C /* Discovery2ViewController.m */,
 				78B69B0E1C8C0BA20006F64E /* SquareViewController.h */,
 				78B69B0F1C8C0BA20006F64E /* SquareViewController.m */,
 				33A890D51C8959A400859342 /* LoginViewController.h */,
@@ -4107,6 +4191,8 @@
 		78C772201C8AB2F400461C7E /* shared_library */ = {
 			isa = PBXGroup;
 			children = (
+				333923AD1C8D1B4D0096184C /* FMDB */,
+				333923A61C8D1B010096184C /* HBCacheCenter */,
 				78B69B1E1C8C20670006F64E /* UIView+Transition.h */,
 				78B69B1F1C8C20670006F64E /* UIView+Transition.m */,
 				78B69B141C8C1B750006F64E /* RKTabView */,
@@ -4237,6 +4323,9 @@
 				78B69AF81C8BC9E50006F64E /* HBNavigationbar+html.m */,
 				78B69B281C8C61330006F64E /* RefreshCollectionView.h */,
 				78B69B291C8C61330006F64E /* RefreshCollectionView.m */,
+				333923CA1C8D33AB0096184C /* ImageCollectionCell.h */,
+				333923CB1C8D33AB0096184C /* ImageCollectionCell.m */,
+				333923CC1C8D33AB0096184C /* ImageCollectionCell.xib */,
 				78B69B2B1C8C62710006F64E /* INSPullToRefresh */,
 			);
 			path = view;
@@ -4272,6 +4361,7 @@
 				33A888B81C891EB500859342 /* Frameworks */,
 				33A888B91C891EB500859342 /* Resources */,
 				A56B23311AE6E91745F257BD /* Copy Pods Resources */,
+				1BBAEDC3314948720E639A44 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -4322,6 +4412,7 @@
 				33A888CE1C891EB600859342 /* LaunchScreen.storyboard in Resources */,
 				33A88C5B1C891F8E00859342 /* ServiceInspector.bundle in Resources */,
 				33A888CB1C891EB600859342 /* Assets.xcassets in Resources */,
+				333923CE1C8D33AB0096184C /* ImageCollectionCell.xib in Resources */,
 				33A88C501C891F8E00859342 /* ServiceGesture.bundle in Resources */,
 				33A88D1B1C891F8F00859342 /* html+samurai.css in Resources */,
 				33A88C581C891F8E00859342 /* ServiceGrids.bundle in Resources */,
@@ -4349,6 +4440,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1BBAEDC3314948720E639A44 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A56B23311AE6E91745F257BD /* Copy Pods Resources */ = {
@@ -4392,6 +4498,7 @@
 				78C7725A1C8AB2F400461C7E /* NSObject+AutoRuntime.m in Sources */,
 				33A890001C89562500859342 /* RelationAccountReq.m in Sources */,
 				78C7726C1C8AB2F400461C7E /* UIImageView+HighlightedWebCache.m in Sources */,
+				333923CD1C8D33AB0096184C /* ImageCollectionCell.m in Sources */,
 				33A88C9D1C891F8E00859342 /* UIActivityIndicatorView+Html.m in Sources */,
 				33A88BE71C891F8E00859342 /* Samurai_Handler.m in Sources */,
 				33A88C091C891F8E00859342 /* Samurai_ServiceConfig.m in Sources */,
@@ -4530,6 +4637,7 @@
 				33A88C281C891F8E00859342 /* Samurai_ActivityStackGroup.m in Sources */,
 				33A88C101C891F8E00859342 /* UIViewController+TemplateLoading.m in Sources */,
 				33A8908F1C89562500859342 /* PengWebLoginResp.m in Sources */,
+				333923BC1C8D1B4D0096184C /* FMDatabase+InMemoryOnDiskIO.m in Sources */,
 				33A88C151C891F8E00859342 /* Samurai_UIImageView.m in Sources */,
 				33A88C251C891F8E00859342 /* Samurai_Activity.m in Sources */,
 				33A88C601C891F8E00859342 /* JBLineChartView.m in Sources */,
@@ -4686,6 +4794,7 @@
 				33A88CF21C891F8F00859342 /* Samurai_HtmlElementSpan.m in Sources */,
 				33A890B11C89562500859342 /* TopicevaluateItem.m in Sources */,
 				33A890591C89562500859342 /* DelCommentResp.m in Sources */,
+				333923C01C8D1B4D0096184C /* FMDatabaseQueue.m in Sources */,
 				33A8904C1C89562500859342 /* CommentResp.m in Sources */,
 				33A88CA91C891F8E00859342 /* UITableView+Html.m in Sources */,
 				78B69B3F1C8C687F0006F64E /* PengResource.m in Sources */,
@@ -4719,6 +4828,7 @@
 				33A88CA61C891F8E00859342 /* UISlider+Html.m in Sources */,
 				33A88D111C891F8F00859342 /* Samurai_HtmlRenderStoreScope.m in Sources */,
 				33A88CA11C891F8E00859342 /* UIImageView+Html.m in Sources */,
+				333923AC1C8D1B250096184C /* YTKKeyValueStore.m in Sources */,
 				33A890941C89562500859342 /* PiazzaItem.m in Sources */,
 				33A890291C89562500859342 /* UserInfoReq.m in Sources */,
 				33A88BF01C891F8E00859342 /* Samurai_Trigger.m in Sources */,
@@ -4768,6 +4878,7 @@
 				33A88BE41C891F8E00859342 /* Samurai_Assert.m in Sources */,
 				33A890101C89562500859342 /* SubscribeTopicPageReq.m in Sources */,
 				33A890B41C89562500859342 /* TopicItem.m in Sources */,
+				333923BF1C8D1B4D0096184C /* FMDatabasePool.m in Sources */,
 				33A88CC71C891F8F00859342 /* Samurai_HtmlElementDd.m in Sources */,
 				33A8903F1C89562500859342 /* ChipsInfoResp.m in Sources */,
 				78C772801C8AD2D500461C7E /* PENGClient.m in Sources */,
@@ -4839,6 +4950,7 @@
 				33A890561C89562500859342 /* CrowdReceiverInfoResp.m in Sources */,
 				33A88D001C891F8F00859342 /* Samurai_HtmlElementUl.m in Sources */,
 				33A890991C89562500859342 /* QueryTagLibResp.m in Sources */,
+				333923C61C8D30230096184C /* Discovery2ViewController.m in Sources */,
 				33A890931C89562500859342 /* PengWebUserInfoResp.m in Sources */,
 				78B69B1C1C8C1B750006F64E /* RKTabItem.m in Sources */,
 				33A88C071C891F8E00859342 /* Samurai_ServiceLoader.m in Sources */,
@@ -4890,7 +5002,9 @@
 				33A88C231C891F8E00859342 /* Samurai_UIWebView.m in Sources */,
 				33A88CF81C891F8F00859342 /* Samurai_HtmlElementTemplate.m in Sources */,
 				33A88FBB1C89562500859342 /* DailySignInReq.m in Sources */,
+				333923BD1C8D1B4D0096184C /* FMDatabase.m in Sources */,
 				33A88CE51C891F8F00859342 /* Samurai_HtmlElementLabel.m in Sources */,
+				333923BE1C8D1B4D0096184C /* FMDatabaseAdditions.m in Sources */,
 				33A890D41C89563800859342 /* HBActiveObject.m in Sources */,
 				33A8909D1C89562500859342 /* ResetPasswordResp.m in Sources */,
 				33A88C9B1C891F8E00859342 /* Samurai_CSSUri.m in Sources */,
@@ -5008,6 +5122,7 @@
 				78B69B0A1C8BDADF0006F64E /* SigninModel.m in Sources */,
 				33A88FF21C89562500859342 /* PengWebLoginReq.m in Sources */,
 				33A888C31C891EB600859342 /* AppDelegate.m in Sources */,
+				333923A91C8D1B010096184C /* CacheCenter.m in Sources */,
 				33A88FD91C89562500859342 /* GiftOredersReq.m in Sources */,
 				33A88C391C891F8E00859342 /* Samurai_EventPanGesture.m in Sources */,
 				33A88FA81C89562500859342 /* AdvertiseListReq.m in Sources */,
@@ -5052,6 +5167,7 @@
 				33A88C2C1C891F8E00859342 /* Samurai_Document.m in Sources */,
 				33A890BD1C89562500859342 /* UserFollowingResp.m in Sources */,
 				33A88C621C891F8E00859342 /* ServiceMonitorCPUModel.m in Sources */,
+				333923C11C8D1B4D0096184C /* FMResultSet.m in Sources */,
 				33A88BF41C891F8E00859342 /* Samurai_CoreConfig.m in Sources */,
 				33A8902B1C89562500859342 /* WxAuthReq.m in Sources */,
 				33A890D11C89562500859342 /* Resp.m in Sources */,

@@ -74,6 +74,8 @@ static AFHTTPRequestOperationManager * maneger;
     
     maneger = [AFHTTPRequestOperationManager manager];
     maneger.securityPolicy = [AFSecurityPolicy defaultPolicy];
+    maneger.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
 
     [maneger GET:@"http://121.199.49.104:8080/PengResourceService/PengDNSv2" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
         

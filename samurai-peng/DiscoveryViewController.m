@@ -15,8 +15,14 @@
 
 @implementation DiscoveryViewController
 @def_model(DiscoveryTopicPageModel, model)
-
 @def_outlet(RefreshCollectionView *,	list );
+
+-(void)dealloc
+{
+    [self.model removeSignalResponder:self];
+    [[SigninModel sharedInstance] removeSignalResponder:self];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadTemplate:@"/www/html/find.html"];
@@ -24,7 +30,12 @@
     
     self.model = [DiscoveryTopicPageModel new];
     [self.model addSignalResponder:self];
+    [[SigninModel sharedInstance] addSignalResponder:self];
     @weakify(self)
+    
+    self.onSignal(SigninModel.loginsuccess,^{ @strongify(self)
+        [self refresh];
+    });
     
     self.onSignal( RefreshCollectionView.eventPullToRefresh, ^{
         @strongify( self );
@@ -33,15 +44,13 @@
     });
     
     self.onSignal( RefreshCollectionView.eventLoadMore, ^{
-        
         @strongify( self );
-        
         [self loadMore];
     });
     
     
     self.onSignal(DiscoveryTopicPageModel.eventLoading,^{
-        NSLog(@"正在登录中...");
+        NSLog(@"正在加载中...");
     });
     
     self.onSignal(DiscoveryTopicPageModel.eventLoaded,^{
@@ -57,7 +66,7 @@
         NSLog(@"请求错误");
         [self.list stopLoading];
     });
-    [self.model refresh];     
+//    [self.model refresh];     
     // Do any additional setup after loading the view.
 }
 
@@ -69,14 +78,7 @@
 
 - (void)loadMore
 {
-//    if ( [self.model more] )
-//    {
-//        [_currentModel loadMore];
-//    }
-//    else
-//    {
-//        [self.list stopLoading];
-//    }
+    [self.model refresh]; 
 }
 
 
@@ -85,9 +87,9 @@
     self.scope[ @"list" ] = @{
                               @"section-shots" : ({
                                   NSMutableArray * shots = [NSMutableArray array];
-                                  for (DiscoveryTopicItem * item in self.model.resp.list)
+                                  for (DiscoveryTopicItem * item in self.model.items)
                                   {
-                                       [shots addObject : [self pengResDataThumbimageurl:item.img]];
+                                      [shots addObject : @{@"shot-url": [self pengResDataThumbimageurl:item.img]}];
                                   }
                                   shots;
                               })

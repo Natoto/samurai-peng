@@ -27,6 +27,8 @@
 @property(nonatomic,retain) NSString * m_pengWebUid;//碰碰网ID,不为空则为绑定，否则为没有绑定
 @property(nonatomic,retain) NSString * m_pengWebNickname;//碰碰网昵称
 @property(nonatomic,retain) NSString * m_pengWebAvatar;//碰碰网头像
+@property(nonatomic,retain) NSString * m_pengUserAvatar;//碰用户头像
+
 #pragma mark - 系统变量
 @property(nonatomic,retain) NSString * m_PengResourceServiceDNS;
 @property(nonatomic,retain) NSString * m_hostname;

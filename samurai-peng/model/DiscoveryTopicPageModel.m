@@ -8,7 +8,8 @@
 #import "DiscoveryTopicPageModel.h" 
 @implementation DiscoveryTopicPageModel
 
-@def_prop_strong(DiscoveryTopicPageResult *,		resp)
+@def_prop_strong( NSMutableArray *,		items)
+//@def_prop_strong(DiscoveryTopicPageResult *,		resp)
 @def_signal( eventLoading )
 @def_signal( eventLoaded )
 @def_signal( eventError )
@@ -42,7 +43,6 @@
 }
 
 #pragma mark -
-
 - (void)refresh
 {
     PENGClient *manager = [PENGClient sharedClient];
@@ -57,7 +57,15 @@
         
         NSString *responsejson = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
         DiscoveryTopicPageResult *resp = [[DiscoveryTopicPageResult alloc] initWithJSONData:[responsejson dataUsingEncoding:NSUTF8StringEncoding]];
-        self.resp = resp;
+        if (self.fromTopicId.integerValue != -1) {
+            self.fromTopicId = resp.lastId;
+            [self.items addObjectsFromArray:resp.list];
+        }
+        else
+        {
+            self.fromTopicId = resp.lastId;
+            self.items = [NSMutableArray arrayWithArray:resp.list];
+        }
         [self modelSave];
         [self sendSignal:self.eventLoaded withObject:resp];
         NSLog(@"%@", responsejson);
@@ -65,6 +73,15 @@
         [self sendSignal:self.eventError];
     }];
     [self sendSignal:self.eventLoading];
+}
+
+
+-(NSNumber *)fromTopicId
+{
+    if (!_fromTopicId) {
+        _fromTopicId = @-1;
+    }
+    return _fromTopicId;
 }
 
 
